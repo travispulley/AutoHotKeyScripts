@@ -45,11 +45,8 @@ Run, https://duckduckgo.com/?q=%Clipboard%
 Return
 
 ; multiply scroll when alt is held
-; TODO FIXME - why do browsers scale on this?
-; !$WheelDown::Send, {WheelDown 3}
-; !$WheelUp::Send, {WheelUp 3}
-!$WheelDown::Send, {PgDn}
-!$WheelUp::Send, {PgUp}
+!$WheelDown::MouseClick, WheelDown, , , 3
+!$WheelUp::  MouseClick, WheelUp,   , , 3
 
 ; secondary clipboard copy+paste
 #c:: ; win-c copy
